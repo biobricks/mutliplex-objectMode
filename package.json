@@ -1,0 +1,21 @@
+{
+  "name": "multiplex-objectMode",
+  "version": "0.0.1",
+  "description": "A wrapper for multiplex-meta that adds objectMode and encoding options for substreams.",
+  "main": "index.js",
+  "author": "marc juul",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "duplex-json-stream": "^1.0.1",
+    "xtend": "^4.0.1",
+    "multiplex-meta" : "git://github.com/biobricks/multiplex-meta.git#e6874b79fdc8117823c277f04cd36de750aa5213"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biobricks/multiplex-objectMode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/biobricks/multiplex-objectMode/issues"
+  },
+  "homepage": "https://github.com/biobricks/multiplex-objectMode"
+}
