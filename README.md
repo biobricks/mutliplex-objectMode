@@ -10,22 +10,15 @@ var plex1 = multiplex();
 
 var stream1 = plex1.createStream(); // binary stream with auto-generated name
 
-var stream2 = plex1.createStream({ 
-  name: 'stringStream', // custom name (make sure it's unique!)
-  extra: 'info' // attach some extra meta-data
-}, {
+var stream2 = plex1.createStream(null, {
   encoding: 'utf8' // set encoding on both ends of stream to utf8
 });
 
-var stream3 = plex1.createStream({ 
-  // name not specified: let multiplex auto-generate the stream name
-  extra: 'info' // attach some extra meta-data
-}, {
+var stream3 = plex1.createStream(null, {
   objectMode: true // send and receive objects
 });
  
 var plex2 = multiplex(function onStream(stream, meta) {
-  console.log("Got stream with meta-data:", meta);
 
   stream.on('data', function(data) {
     console.log("Data on stream '"+meta.name+"':", data);
