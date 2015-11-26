@@ -1,7 +1,7 @@
 {
   "name": "multiplex-objectMode",
   "version": "0.0.1",
-  "description": "A wrapper for multiplex-meta that adds objectMode and encoding options for substreams.",
+  "description": "A wrapper for multiplex-meta that adds objectMode and encoding options when creating substreams.",
   "main": "index.js",
   "author": "marc juul",
   "license": "AGPL-3.0",
